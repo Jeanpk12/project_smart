@@ -4,7 +4,7 @@ import google.generativeai as genai
 import streamlit as st
 
 # Configurando a API_KEY do Google Gemini
-API_KEY = "AIzaSyClmJS9dpfkpoBHCxIzWAy6cP-4yOyBGh0"  # Substitua pela sua chave de API
+API_KEY = "AIzaSyClmJS9dpfkpoBHCxIzWAy6cP-4yOyBGh0"
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("learnlm-1.5-pro-experimental")
 
@@ -14,7 +14,7 @@ def agente_responde(prompt):
         prompt,
         generation_config=genai.types.GenerationConfig(
             candidate_count=1,
-            max_output_tokens=2000,
+            max_output_tokens=8000,
             temperature=1.0
         )
     )
