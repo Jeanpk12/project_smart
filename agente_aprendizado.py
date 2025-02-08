@@ -6,7 +6,7 @@ import streamlit as st
 # Configurando a API_KEY do Google Gemini
 API_KEY = "AIzaSyClmJS9dpfkpoBHCxIzWAy6cP-4yOyBGh0"
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("learnlm-1.5-pro-experimental")
+model = genai.GenerativeModel("gemini-2.0-pro-exp-02-05")
 
 # Função principal do agente
 def agente_responde(prompt):
