@@ -1,10 +1,12 @@
 
 # Importando as bibliotecas
+import os
 import google.generativeai as genai
 import streamlit as st
+from dotenv import load_dotenv
 
-# Configurando a API_KEY do Google Gemini
-API_KEY = "AIzaSyClmJS9dpfkpoBHCxIzWAy6cP-4yOyBGh0"
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.0-pro-exp-02-05")
 
