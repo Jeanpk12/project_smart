@@ -49,7 +49,6 @@ def agente_exercicios(texto):
 # Interface do Streamlit
 st.title("Agentes Educacionais para Programação")
 
-st.sidebar.header("Configurações")
 texto_input = st.text_area("Insira o texto técnico em inglês:", "")
 acao = st.selectbox(
     "Escolha a ação:",
