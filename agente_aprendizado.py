@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Função principal do agente
 def agente_responde(prompt):
