@@ -25,7 +25,7 @@ def agente_responde(prompt):
 # Agente Tradutor Técnico
 def agente_tradutor(texto_ingles):
     prompt = (
-        f"Você é um tradutor técnico experiente. Traduza o seguinte texto do inglês para o português, ajustando para que ele seja claro e compreensível para estudantes de programação iniciantes:\n\n"
+        f"Você é um tradutor técnico experiente. Traduza o seguinte texto do inglês para o português, ajustando para que ele seja claro e compreensível para estudantes de programação:\n\n"
         f"{texto_ingles}"
     )
     return agente_responde(prompt)
@@ -33,7 +33,7 @@ def agente_tradutor(texto_ingles):
 # Agente Educador
 def agente_educador(texto):
     prompt = (
-        f"Você é um educador experiente. Crie um conteúdo didático baseado no texto abaixo, utilizando linguagem simples e exemplos práticos para ajudar iniciantes a entenderem o conceito:\n\n"
+        f"Você é um educador experiente. Crie um conteúdo didático baseado no texto abaixo, utilizando linguagem simples e exemplos práticos para ajudar a entenderem o conceito:\n\n"
         f"{texto}"
     )
     return agente_responde(prompt)
@@ -41,7 +41,7 @@ def agente_educador(texto):
 # Agente Avaliador (Criador de Exercícios)
 def agente_exercicios(texto):
     prompt = (
-        f"Você é um criador de conteúdo educacional. Crie três pequenos exercícios baseados no texto abaixo para ajudar iniciantes a praticarem o conceito:\n\n"
+        f"Você é um criador de conteúdo educacional. Crie três pequenos exercícios baseados no texto abaixo para ajudar na prática do conceito:\n\n"
         f"{texto}"
     )
     return agente_responde(prompt)
