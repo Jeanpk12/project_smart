@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
+model = genai.GenerativeModel("gemini-2.5-flash-preview-04-17")
 
 # Função principal do agente
 def agente_responde(prompt):
@@ -25,7 +25,7 @@ def agente_responde(prompt):
 # Agente Tradutor Técnico
 def agente_tradutor(texto_ingles):
     prompt = (
-        f"Você é um tradutor técnico experiente. Traduza o seguinte texto do inglês para o português, ajustando para que ele seja claro e compreensível para estudantes de programação:\n\n"
+        f"Você é um agente expecilizado em criar textos didáticos e técnico tendo como base o seguinte material:\n\n"
         f"{texto_ingles}"
     )
     return agente_responde(prompt)
